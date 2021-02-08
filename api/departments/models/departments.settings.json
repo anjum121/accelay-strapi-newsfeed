@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "name": "departments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "department": {
+      "type": "string"
+    },
+    "article": {
+      "via": "departments",
+      "model": "articles"
+    }
+  }
+}
